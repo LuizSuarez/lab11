@@ -1,14 +1,7 @@
 import React from 'react';
 
-const ItemList = () => {
-  const items = ['Apple', 'Banana', 'Orange'];
-  return (
-    <ul>
-      {items.map((item, index) => (
-        <li key={index} data-testid="item">{item}</li>
-      ))}
-    </ul>
-  );
+const HelloWorld = () => {
+  return <h1>Hello world</h1>;
 };
 
-export default ItemList;
+export default HelloWorld;
