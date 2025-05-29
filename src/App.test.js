@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import HelloWorld from './HelloWorld';
+import ItemList from './ItemList';
 
-test('renders HelloWorld with correct text content', () => {
-  render(<HelloWorld />);
-  const heading = screen.getByRole('heading');
-  expect(heading).toHaveTextContent('Hello world');
+test('checks if Banana is present in the list', () => {
+  render(<ItemList />);
+  const banana = screen.getByText('Banana');
+  expect(banana).toBeInTheDocument();
 });
